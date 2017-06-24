@@ -82,7 +82,5 @@ $RECYCLE.BIN/
 
 # Assets
 Assets/AssetStore/*
-Assets/AssetStore/SteamVR/*
-Assets/AssetStore/VRTK/*
 
 
