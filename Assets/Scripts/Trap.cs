@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour {
-
-    void OnTriggerEnter(Collider col)
+public class Trap : MonoBehaviour {
+    
+    void OnTriggerEnter(Collider Player)
     {
-        Debug.Log("Test1");
-        if (col.gameObject.tag == "Trap")
+        if (Player.gameObject.tag == "Player")
         {
-
-            Debug.Log("Test2");
+            Debug.Log("Trap activated");
             SceneManager.LoadScene(1);
         }
     }
